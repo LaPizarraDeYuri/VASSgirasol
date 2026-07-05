@@ -1,0 +1,201 @@
+<!-- Nombres y apellidos: [Antonio E. Cantó Álvarez] -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Título del negocio -->
+  <title>Cafetería Girasol</title>
+
+  <!-- Enlace a la hoja de estilos -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       CABECERA
+       ============================================================ -->
+  <header>
+    <div class="logo">🌻 Cafetería Girasol</div>
+
+    <!-- Botón menú hamburguesa (solo visible en móvil) -->
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="navegacion">
+      ☰ Menú
+    </button>
+
+    <nav id="navegacion" aria-label="Menú principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section id="hero">
+    <h1>Bienvenida a Cafetería Girasol</h1>
+    <p>El mejor café de la ciudad, elaborado con granos de origen sostenible y un toque de cariño.</p>
+    <a href="#contacto" class="boton">Contáctanos</a>
+  </section>
+
+
+  <!-- ============================================================
+       SERVICIOS / PRODUCTOS
+       ============================================================ -->
+  <section id="servicios">
+    <h2>Nuestros servicios</h2>
+    <div class="tarjetas">
+
+      <!-- Tarjeta 1 -->
+      <div class="tarjeta">
+        <div class="tarjeta-icono">
+          <img src="images/producto.png" alt="Taza de café con arte latte">
+        </div>
+        <h3>Cafés especiales</h3>
+        <p>Disfruta de nuestros cafés de especialidad, preparados con granos de origen único y técnicas de extracción cuidadosas.</p>
+      </div>
+
+      <!-- Tarjeta 2 -->
+      <div class="tarjeta">
+        <div class="tarjeta-icono">
+          <img src="images/producto.png" alt="Repostería casera">
+        </div>
+        <h3>Repostería casera</h3>
+        <p>Bizcochos, galletas y tartas hechas cada mañana con ingredientes naturales y recetas tradicionales.</p>
+      </div>
+
+      <!-- Tarjeta 3 -->
+      <div class="tarjeta">
+        <div class="tarjeta-icono">
+          <img src="images/producto.png" alt="Espacio acogedor con wifi">
+        </div>
+        <h3>Ambiente y wifi</h3>
+        <p>Un espacio luminoso y tranquilo, con conexión wifi gratuita, ideal para trabajar o desconectar.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SOBRE NOSOTROS
+       ============================================================ -->
+  <section id="nosotros">
+    <h2>Sobre nosotros</h2>
+    <p>Cafetería Girasol nació en 2020 con la ilusión de crear un rincón acogedor donde el café de calidad y la sonrisa del cliente fueran los protagonistas. Apostamos por el comercio justo, los productos de proximidad y un trato cercano que te haga sentir como en casa. Ven a descubrir por qué somos el lugar favorito de los amantes del buen café.</p>
+  </section>
+
+
+  <!-- ============================================================
+       TESTIMONIOS (PARTE COMPLEMENTARIA)
+       ============================================================ -->
+  <section id="testimonios">
+    <h2>Lo que dicen nuestros clientes</h2>
+    <div class="testimonios-grid">
+
+      <div class="testimonio">
+        <p class="testimonio-texto">"El mejor café que he probado en años. El ambiente es ideal para leer y trabajar."</p>
+        <p class="testimonio-autor">— Laura Martínez</p>
+        <p class="testimonio-estrellas">★★★★★</p>
+      </div>
+
+      <div class="testimonio">
+        <p class="testimonio-texto">"La repostería es espectacular, y el personal siempre te recibe con una sonrisa."</p>
+        <p class="testimonio-autor">— Carlos Gómez</p>
+        <p class="testimonio-estrellas">★★★★★</p>
+      </div>
+
+      <div class="testimonio">
+        <p class="testimonio-texto">"Un espacio con mucho encanto. Perfecto para desayunar o tomar una merienda."</p>
+        <p class="testimonio-autor">— Ana Rodríguez</p>
+        <p class="testimonio-estrellas">★★★★☆</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PREGUNTAS FRECUENTES (PARTE COMPLEMENTARIA)
+       ============================================================ -->
+  <section id="faq">
+    <h2>Preguntas frecuentes</h2>
+
+    <details>
+      <summary>¿Cuál es el horario de apertura?</summary>
+      <p>Abrimos de lunes a sábado de 8:00 a 21:00. Los domingos cerramos por descanso.</p>
+    </details>
+
+    <details>
+      <summary>¿Ofrecen opciones sin gluten o veganas?</summary>
+      <p>Sí, disponemos de opciones sin gluten y alternativas vegetales para la leche (soja, avena, almendra). Pregunta a nuestro personal.</p>
+    </details>
+
+    <details>
+      <summary>¿Se puede reservar mesa para grupos?</summary>
+      <p>Por supuesto. Para grupos de más de 6 personas, te recomendamos avisarnos con antelación llamando al 900 123 456.</p>
+    </details>
+
+    <details>
+      <summary>¿Tienen tarjetas de fidelización?</summary>
+      <p>Sí, por cada 10 cafés te llevas uno gratis. Pide tu tarjeta en caja.</p>
+    </details>
+
+  </section>
+
+
+  <!-- ============================================================
+       CONTACTO
+       ============================================================ -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Tienes alguna pregunta? Escríbenos y te respondemos lo antes posible.</p>
+
+    <form id="formulario-contacto" novalidate>
+      <!-- Nombre -->
+      <div class="campo">
+        <label for="nombre">Nombre completo *</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej: Ana Pérez" required aria-describedby="error-nombre">
+        <div id="error-nombre" class="error-mensaje"></div>
+      </div>
+
+      <!-- Email -->
+      <div class="campo">
+        <label for="email">Correo electrónico *</label>
+        <input type="email" id="email" name="email" placeholder="nombre@dominio.com" required aria-describedby="error-email">
+        <div id="error-email" class="error-mensaje"></div>
+      </div>
+
+      <!-- Mensaje -->
+      <div class="campo">
+        <label for="mensaje">Mensaje *</label>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required aria-describedby="error-mensaje"></textarea>
+        <div id="error-mensaje" class="error-mensaje"></div>
+      </div>
+
+      <button type="submit" class="boton">Enviar mensaje</button>
+    </form>
+
+    <!-- Div para confirmación de envío -->
+    <div id="confirmacion"></div>
+  </section>
+
+
+  <!-- ============================================================
+       PIE DE PÁGINA
+       ============================================================ -->
+  <footer>
+    <p>&copy; 2026 Cafetería Girasol · Todos los derechos reservados</p>
+    <p>📞 900 123 456 · ✉️ hola@cafeteriagirasol.es</p>
+  </footer>
+
+
+  <!-- Enlace al archivo JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
